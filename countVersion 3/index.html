@@ -12,7 +12,7 @@
     .clock-styles {
         background-color: white;
         color: blue;
-        font-style:italic;
+        font-style: italic;
     }
 </style>
 
@@ -28,28 +28,28 @@
                         <p class="clock-hours clock-timer" id="day">
                         </p>
                         <p class="clock-label">
-                        <h3>Days</h3>
+                            <h3>Days</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-hours clock-timer" id="hour">
                         </p>
                         <p class="clock-label">
-                        <h3>Hours</h3>
+                            <h3>Hours</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-minutes clock-timer" id="minute">
                         </p>
                         <p class="clock-label">
-                        <h3>Minutes</h3>
+                            <h3>Minutes</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-seconds clock-timer" id="second">
                         </p>
                         <p class="clock-label">
-                        <h3>Seconds</h3>
+                            <h3>Seconds</h3>
                         </p>
                     </div>
                     <script src="js/clock.js"></script>
@@ -81,8 +81,7 @@
     <!-- ROUND CLOCK (CLOCKS) -->
     <div id="Clocks">
         <div class="clock-styles">
-            <link rel='stylesheet'
-                href='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.css'>
+            <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.css'>
             <link rel="stylesheet" href="css/round-clock.css">
             <div class="circular-timer">
                 <ul>
@@ -132,7 +131,7 @@
                     setTimeout(() => runS7DClock(S7DGroups), 1000);
                 }
 
-                window.onload = function () {
+                window.onload = function() {
                     let Clock, Clock_S7DGroups;
                     [Clock, Clock_S7DGroups] = createS7DClock();
                     document.body.appendChild(Clock);
