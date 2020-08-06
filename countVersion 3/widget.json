@@ -1,0 +1,72 @@
+{
+    "parms": [{
+            "id": "clock-type",
+            "name": "Clock Type:",
+            "type": "text",
+            "default": "Extended",
+            "PossibleOptions": [
+                { "text": "Extended" },
+                { "text": "Square" },
+                { "text": "Clocks" },
+                { "text": "Digital" },
+                { "text": "Squares" }
+            ]
+        },
+        {
+            "id": "date",
+            "name": "countdown-Date",
+            "type": "Date",
+            "default": "February 2, 11:20"
+        },
+        {
+            "id": "hours",
+            "name": "Hours:",
+            "type": "radio",
+            "default": "false"
+        },
+        {
+            "id": "days",
+            "name": "Days:",
+            "type": "radio",
+            "default": "false"
+        },
+        {
+            "id": "minutes",
+            "name": "Minutes:",
+            "type": "radio",
+            "default": "false"
+        },
+        {
+            "id": "seconds",
+            "name": "Seconds:",
+            "type": "radio",
+            "default": "false"
+        },
+        {
+            "id": "text-align",
+            "name": "Text Alignment:",
+            "type": "text-align",
+            "default": "center"
+        },
+        {
+            "id": "bg-color",
+            "name": "Background Color:",
+            "type": "color-picker",
+            "default": "transparent"
+        },
+        {
+            "id": "font-color",
+            "name": "Font Color:",
+            "type": "color-picker",
+            "default": "#000000"
+        },
+        {
+            "id": "font-underline",
+            "name": "Font Style:",
+            "type": "text-underline",
+            "default": false
+        }
+    ],
+    "initialWidth": "200",
+    "initialHeight": "80"
+}
