@@ -35,14 +35,6 @@ var SlickCarousel = (function () {
             $("#Clocks").css("display", "none");
             $("#Digital").css("display", "none");
 
-            $divClass = $('.card__top');
-            console.log($divClass);
-            $divClass.css({
-                'background-color': bgColor,
-                'color': fontColor
-            })
-
-
             break;
         case "Clocks":
             console.log("inside Clocks...");
@@ -69,19 +61,27 @@ var SlickCarousel = (function () {
             $("#Digital").css("display", "none");
     }
 
+    // $divClass = $('.card__top');
+    //         console.log($divClass);
+    //         $divClass.css({
+    //             'background-color': bgColor,
+    //             'color': fontColor
+    //         })
+
+
 
     var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
-
+    var fontUnderline = getParameterByName("font-underline");
     $divClass = $('.clock-styles');
     $divClass.css({
         'background-color': bgColor,
-        'color': fontColor
+        'color': fontColor,
+        'Font Style':font-underline
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");
 
-    var fontUnderline = getParameterByName("font-underline");
 
     // $count.append(date);
     // $count.click(() => window.open(link, '_blank'));
