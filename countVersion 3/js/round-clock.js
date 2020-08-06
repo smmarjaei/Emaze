@@ -1,4 +1,13 @@
-$(function() {
+function getParameterByName(name, defaultVal) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+
+    return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+};
+
+
+var ClockType = getParameterByName("clock-type");
+if (ClockType == "Clocks") {
+    $(function() {
     $('.chart').easyPieChart({
         // The color of the curcular bar. You can pass either a css valid color string like rgb, rgba hex or string colors. But you can also pass a function that accepts the current percentage as a value to return a dynamically generated color.
         barColor: '#ef1e25',
@@ -65,3 +74,4 @@ $(function() {
 
 
 });
+}

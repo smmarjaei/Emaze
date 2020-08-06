@@ -1,6 +1,15 @@
 // SET TIMER HERE 
 
-var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
+function getParameterByName(name, defaultVal) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+
+    return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+};
+
+
+var ClockType = getParameterByName("clock-type");
+if (ClockType == "Square") {
+    var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
 var c = new Clock(deadline, function() { alert('countdown complete') });
 document.body.appendChild(c.el);
 
@@ -108,3 +117,5 @@ function Clock(countdown, callback) {
 
     setTimeout(updateClock, 500);
 }
+}
+    
