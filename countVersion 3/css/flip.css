@@ -52,6 +52,7 @@ body {
 .card__back::after {
     display: block;
     height: 0.72em;
+    color: #ea4c4c;
     background: white;
     padding: 0.25em 0.25em;
     border-radius: 0.15em 0.15em 0 0;
