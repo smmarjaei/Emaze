@@ -1,10 +1,10 @@
 var SlickCarousel = (function() {
 
-    function getParameterByName(name, defaultVal) {
-        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    // function getParameterByName(name, defaultVal) {
+    //     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 
-        return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-    };
+    //     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+    // };
 
 
     // var $count = $('#styles');
@@ -78,12 +78,8 @@ var SlickCarousel = (function() {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-<<<<<<< HEAD
         'Font Style':font-underline,
         'CountDownDate':date
-=======
-        'Font Style': font - underline
->>>>>>> 5e26e604fbd1aca01632ef10385a865edcb6cff2
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");
