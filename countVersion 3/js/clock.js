@@ -7,10 +7,11 @@ if (ClockType == "Extended") {
     if (CountDownDate!="nov 2, 2020 15:37:25"){
         deadline = CountDownDate;
     }
-    else if (CountDownDate!=""){}
+    else {
         deadline = "nov 2, 2020 15:37:25";
     }
-
+    
+    console.log(deadline);
     deadline = new Date(Date.parse(new Date(deadline)));
     console.log("Deadline", deadline.getTime());
 

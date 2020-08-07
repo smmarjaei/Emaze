@@ -17,7 +17,7 @@ if (ClockType == "Square") {
     if(CountDownDate!="nov 2, 2020 15:37:25"){
         deadline=CountDownDate;
     }
-    else if (CountDownDate!=""){}
+    else{
         deadline = "nov 2, 2020 15:37:25";
     }
     // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED

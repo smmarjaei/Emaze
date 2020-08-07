@@ -13,7 +13,7 @@ if (ClockType == "Clocks") {
     if (CountDownDate != "nov 2, 2020 15:37:25") {
         deadline = CountDownDate;
     }
-    else if (CountDownDate!=""){}
+    else {
         deadline = "nov 2, 2020 15:37:25";
     }
     // var bgColor = getParameterByName("bg-color");
