@@ -16,6 +16,16 @@ if (ClockType == "Clocks") {
     else {
         deadline = "nov 2, 2020 15:37:25";
     }
+
+    var bgColor = getParameterByName("bg-color");
+    var fontColor = getParameterByName("font-color");
+    var fontUnderline = getParameterByName("font-underline");
+    $divClass = $('.circular-timer');
+    $divClass.css({
+        'background-color': bgColor,
+        'color': fontColor,
+    })
+
     // var bgColor = getParameterByName("bg-color");
     // var fontColor = getParameterByName("font-color");
     // var fontUnderline = getParameterByName("font-underline");
