@@ -8,16 +8,9 @@ function getParameterByName(name, defaultVal) {
 
 
 var ClockType = getParameterByName("clock-type");
-if (ClockType == "Sports") {
-    var CountDownDate = getParameterByName("date");
-    if(CountDownDate!="nov 2, 2020 15:37:25"){
-        deadline=CountDownDate;
-    }
-    else{
-        deadline="nov 2, 2020 15:37:25";
-    }
+if (ClockType == "Square") {
     var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
-    var c = new Clock(deadline, function () { alert('countdown complete') });
+    var c = new Clock(deadline, function() { alert('countdown complete') });
     document.body.appendChild(c.el);
 
     console.log("TESTING");
@@ -33,7 +26,7 @@ if (ClockType == "Sports") {
     $flip.css("color", fontColor);
 
     var fontWeight = getParameterByName("font-underline");
-    $flip.css("font-weight",fontWeight)
+    $flip.css("font-weight", fontWeight)
 
     function CountdownTracker(label, value) {
 
@@ -50,7 +43,7 @@ if (ClockType == "Sports") {
             back = el.querySelector('.card__back'),
             backBottom = el.querySelector('.card__back .card__bottom');
 
-        this.update = function (val) {
+        this.update = function(val) {
             val = ('0' + val).slice(-2);
             if (val !== this.currentValue) {
 
@@ -62,7 +55,7 @@ if (ClockType == "Sports") {
                 top.innerText = this.currentValue;
                 backBottom.setAttribute('data-value', this.currentValue);
 
-                this.el.classList.remove('flip');
+                // this.el.classList.remove('flip');
                 void this.el.offsetWidth;
                 this.el.classList.add('flip');
             }
@@ -97,7 +90,7 @@ if (ClockType == "Sports") {
     function Clock(countdown, callback) {
 
         countdown = countdown ? new Date(Date.parse(countdown)) : false;
-        callback = callback || function () { };
+        callback = callback || function() {};
 
         var updateFn = countdown ? getTimeRemaining : getTime;
 

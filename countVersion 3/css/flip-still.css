@@ -54,9 +54,8 @@ body {
     height: 0.72em;
     background: white;
     padding: 0.25em 0.25em;
-    color: #ea4c4c;
     border-radius: 0.15em 0.15em 0 0;
-    backface-visibility: hidden;
+    backface-visiblity: hidden;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     width: 1.8em;
@@ -65,6 +64,7 @@ body {
 }
 
 .card__bottom {
+    color: #ea4c4c;
     position: absolute;
     top: 50%;
     left: 0;

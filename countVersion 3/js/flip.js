@@ -17,10 +17,10 @@ if (ClockType == "Square") {
         deadline="nov 2, 2020 15:37:25";
     }
     var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
-    var c = new Clock(deadline, function () { alert('countdown complete') });
+    var c = new Clock(deadline, function() { alert('countdown complete') });
     document.body.appendChild(c.el);
 
-    console.log("TESTING");
+    // console.log("TESTING");
     var $cardTop = $('.card__top');
     var $cardBottom = $('.card__bottom');
     var $cardBack = $('.card__back');
@@ -33,7 +33,7 @@ if (ClockType == "Square") {
     $flip.css("color", fontColor);
 
     var fontWeight = getParameterByName("font-underline");
-    $flip.css("font-weight",fontWeight)
+    $flip.css("font-weight", fontWeight)
 
     function CountdownTracker(label, value) {
 
@@ -50,7 +50,7 @@ if (ClockType == "Square") {
             back = el.querySelector('.card__back'),
             backBottom = el.querySelector('.card__back .card__bottom');
 
-        this.update = function (val) {
+        this.update = function(val) {
             val = ('0' + val).slice(-2);
             if (val !== this.currentValue) {
 
@@ -97,7 +97,7 @@ if (ClockType == "Square") {
     function Clock(countdown, callback) {
 
         countdown = countdown ? new Date(Date.parse(countdown)) : false;
-        callback = callback || function () { };
+        callback = callback || function() {};
 
         var updateFn = countdown ? getTimeRemaining : getTime;
 
