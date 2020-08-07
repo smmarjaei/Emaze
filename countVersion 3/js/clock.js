@@ -4,10 +4,10 @@ if (ClockType == "Extended") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if (CountDownDate != "nov 2, 2020 15:37:25") {
+    if (CountDownDate!="nov 2, 2020 15:37:25"){
         deadline = CountDownDate;
     }
-    else {
+    else if (CountDownDate!=""){}
         deadline = "nov 2, 2020 15:37:25";
     }
 
