@@ -9,18 +9,11 @@ function getParameterByName(name, defaultVal) {
 
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Square") {
-    var CountDownDate = getParameterByName("date");
-    if(CountDownDate!="nov 2, 2020 15:37:25"){
-        deadline=CountDownDate;
-    }
-    else{
-        deadline="nov 2, 2020 15:37:25";
-    }
     var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
     var c = new Clock(deadline, function() { alert('countdown complete') });
     document.body.appendChild(c.el);
 
-    // console.log("TESTING");
+    console.log("TESTING");
     var $cardTop = $('.card__top');
     var $cardBottom = $('.card__bottom');
     var $cardBack = $('.card__back');
@@ -62,7 +55,7 @@ if (ClockType == "Square") {
                 top.innerText = this.currentValue;
                 backBottom.setAttribute('data-value', this.currentValue);
 
-                this.el.classList.remove('flip');
+                // this.el.classList.remove('flip');
                 void this.el.offsetWidth;
                 this.el.classList.add('flip');
             }
