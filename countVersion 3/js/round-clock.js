@@ -7,6 +7,13 @@ function getParameterByName(name, defaultVal) {
 
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Clocks") {
+    var CountDownDate = getParameterByName("date");
+    if(CountDownDate!="nov 2, 2020 15:37:25"){
+        deadline=CountDownDate;
+    }
+    else{
+        deadline="nov 2, 2020 15:37:25";
+    }
     $(function() {
     $('.chart').easyPieChart({
         // The color of the curcular bar. You can pass either a css valid color string like rgb, rgba hex or string colors. But you can also pass a function that accepts the current percentage as a value to return a dynamically generated color.

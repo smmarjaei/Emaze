@@ -14,8 +14,8 @@
         },
         {
             "id": "date",
-            "name": "countdown-Date",
-            "type": "Date",
+            "name": "CountdownDate",
+            "type": "text",
             "default": "February 2, 11:20"
         },
         {
@@ -64,7 +64,12 @@
             "id": "font-underline",
             "name": "Font Style:",
             "type": "text-underline",
-            "default": false
+            "default": false,
+            "PossibleOptions": [
+                { "text": "Normal" },
+                { "text": "Bold" },
+                { "text": "Italics" }
+            ]
         }
     ],
     "initialWidth": "200",

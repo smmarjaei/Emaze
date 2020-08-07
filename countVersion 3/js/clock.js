@@ -1,3 +1,14 @@
+var ClockType = getParameterByName("clock-type");
+if (ClockType == "Extended") {
+    var CountDownDate = getParameterByName("date");
+    if(CountDownDate!="nov 2, 2020 15:37:25"){
+        deadline=CountDownDate;
+    }
+    else{
+        deadline="nov 2, 2020 15:37:25";
+    }
+
+
 var deadline = new Date("nov 1, 2020 15:37:25").getTime(); 
   
 var x = setInterval(function() { 

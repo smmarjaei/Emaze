@@ -73,11 +73,13 @@ var SlickCarousel = (function () {
     var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
     var fontUnderline = getParameterByName("font-underline");
+    var CountDownDate = getParameterByName("date");
     $divClass = $('.clock-styles');
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-        'Font Style':font-underline
+        'Font Style':font-underline,
+        'CountDownDate':date
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");

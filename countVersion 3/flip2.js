@@ -8,13 +8,13 @@ function getParameterByName(name, defaultVal) {
 
 
 var ClockType = getParameterByName("clock-type");
-if (ClockType == "Square") {
+if (ClockType == "Sports") {
     var CountDownDate = getParameterByName("date");
     if(CountDownDate!="nov 2, 2020 15:37:25"){
         deadline=CountDownDate;
     }
     else{
-        deadline="nov 2, 2020 15:37:25";
+        deadline=nov 2, 2020 15:37:25;
     }
     var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
     var c = new Clock(deadline, function () { alert('countdown complete') });
