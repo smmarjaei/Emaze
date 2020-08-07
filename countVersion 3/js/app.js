@@ -1,4 +1,4 @@
-var SlickCarousel = (function() {
+var SlickCarousel = (function () {
 
     function getParameterByName(name, defaultVal) {
         var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
@@ -77,7 +77,7 @@ var SlickCarousel = (function() {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-        'Font Style': font - underline
+        'Font Style':font-underline
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");
