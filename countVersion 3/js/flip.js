@@ -12,13 +12,12 @@ if (ClockType == "Square") {
 
     // Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
     var deadline;
-    var CountDownDate = getParameterByName("date"); 
+    var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if(CountDownDate!="nov 2, 2020 15:37:25"){
-        deadline=CountDownDate;
-    }
-    else{
-        deadline = "nov 2, 2020 15:37:25";
+    if (CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = CountDownDate;
+    } else {
+        deadline = "dec 2, 2020 15:37:25";
     }
     // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
     var c = new Clock(deadline, function() { alert('countdown complete') });
