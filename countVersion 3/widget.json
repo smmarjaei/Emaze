@@ -58,7 +58,7 @@
             "id": "font-color",
             "name": "Font Color:",
             "type": "color-picker",
-            "default": "#000000"
+            "default": "#ea4c4c"
         },
         {
             "id": "font-underline",
