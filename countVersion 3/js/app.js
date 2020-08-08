@@ -1,10 +1,10 @@
 var SlickCarousel = (function() {
 
-    function getParameterByName(name, defaultVal) {
-        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    // function getParameterByName(name, defaultVal) {
+    //     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 
-        return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-    };
+    //     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+    // };
 
 
     // var $count = $('#styles');
@@ -61,14 +61,6 @@ var SlickCarousel = (function() {
             $("#Digital").css("display", "none");
     }
 
-    // $divClass = $('.card__top');
-    //         console.log($divClass);
-    //         $divClass.css({
-    //             'background-color': bgColor,
-    //             'color': fontColor
-    //         })
-
-
 
     var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
@@ -78,45 +70,14 @@ var SlickCarousel = (function() {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-<<<<<<< HEAD
         'Font Style':font-underline,
-        'CountDownDate':date
-=======
-        'Font Style': font - underline
->>>>>>> 5e26e604fbd1aca01632ef10385a865edcb6cff2
+        'CountDownDate':date,
+
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");
 
 
-    // $count.append(date);
-    // $count.click(() => window.open(link, '_blank'));
-    // $count.css({
-    //     'font-size': fontSize + 'px',
-    //     'text-align': textAlign,
-    //     'background-color': bgColor,
-    //     'color': fontColor,
-    //     'font-style': fontItalic === "italic" ? 'italic' : 'normal',
-    //     width: '100%',
-    //     height: 'calc(100vh - 16px)',
-    //     border: 'none',
-    //     outline: 'none'
-    // });
 
-    // $count.hover(function() {
-    //     $(this).css({
-    //         'background-color': bgColorHover,
-    //         'color': fontColorHover,
-    //         'font-weight': fontBoldHover === "bold" ? 'bold' : 'normal',
-    //         'font-style': fontItalicHover === "italic" ? 'italic' : 'normal',
-    //     });
-    // }, function() {
-    //     $(this).css({
-    //         'background-color': bgColor,
-    //         'color': fontColor,
-    //         'font-weight': fontBold === "bold" ? 'bold' : 'normal',
-    //         'font-style': fontItalic === "italic" ? 'italic' : 'normal'
-    //     });
-    // });
 
 })();

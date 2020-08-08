@@ -7,13 +7,31 @@ function getParameterByName(name, defaultVal) {
 
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Clocks") {
+    var deadline;
     var CountDownDate = getParameterByName("date");
-    if(CountDownDate!="nov 2, 2020 15:37:25"){
-        deadline=CountDownDate;
+    console.log(CountDownDate);
+    if (CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = CountDownDate;
     }
-    else{
-        deadline="nov 2, 2020 15:37:25";
+    else {
+        deadline = "nov 2, 2020 15:37:25";
     }
+    // var bgColor = getParameterByName("bg-color");
+    // var fontColor = getParameterByName("font-color");
+    // var fontUnderline = getParameterByName("font-underline");
+    // $divClass = $('.clock-container');
+    // $divClass.css({
+    //     'background-color': bgColor,
+    //     'color': fontColor,
+    //     'Font Style':font-underline
+    // })
+
+    // $divClass = $('.clock-timer');
+    // $divClass.css({
+    //     'color': fontColor,
+    //     'Font Style':font-underline
+    // })
+    
     $(function() {
     $('.chart').easyPieChart({
         // The color of the curcular bar. You can pass either a css valid color string like rgb, rgba hex or string colors. But you can also pass a function that accepts the current percentage as a value to return a dynamically generated color.
@@ -38,7 +56,7 @@ if (ClockType == "Clocks") {
     });
 
 
-    var deadline = new Date("nov 1, 2020 15:37:25").getTime();
+    //var deadline = new Date("nov 1, 2020 15:37:25").getTime();
 
     var x = setInterval(function() {
 

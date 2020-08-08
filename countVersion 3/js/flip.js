@@ -1,22 +1,26 @@
 // SET TIMER HERE 
 
-function getParameterByName(name, defaultVal) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+// function getParameterByName(name, defaultVal) {
+//     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 
-    return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-};
+//     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+// };
 
 
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Square") {
-    var CountDownDate = getParameterByName("date");
+
+    // Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
+    var deadline;
+    var CountDownDate = getParameterByName("date"); 
+    console.log(CountDownDate);
     if(CountDownDate!="nov 2, 2020 15:37:25"){
         deadline=CountDownDate;
     }
     else{
-        deadline="nov 2, 2020 15:37:25";
+        deadline = "nov 2, 2020 15:37:25";
     }
-    var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
+    // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
     var c = new Clock(deadline, function() { alert('countdown complete') });
     document.body.appendChild(c.el);
 
