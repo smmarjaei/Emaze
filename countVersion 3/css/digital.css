@@ -1,101 +1,26 @@
-.S7D {
-    display: inline-block;
-    position: relative;
-    width: 60px;
-    height: 100px;
+@font-face {
+    font-family: MyFont;
+    src: url(digital.ttf);
 }
 
-.S7D-segment {
-    width: 16.6666666667%;
-    height: 30%;
-    color: #ddd;
-    background-color: currentColor;
+body {
+    background-color: normal;
+}
+
+.container {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 12px;
+    background-color: normal;
+    /* border: 2px solid black; */
+    font-family: sans-serif;
+    /* box-shadow: 0 0 5px 3px #999; */
 }
 
-.S7D-Num-Group {
-    display: inline-block;
-    white-space: nowrap;
-    padding: 5px;
-    color: #333;
-}
-
-.S7D-segment::before,
-.S7D-segment::after {
-    display: block;
-    content: "";
-    box-sizing: border-box;
-    width: 100%;
-    height: 33.3333333333%;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    border-style: solid;
-    border-width: 5px;
-    border-color: transparent;
-}
-
-.S7D-segment::before {
-    top: -33.3333333333%;
-    border-bottom-color: currentColor;
-}
-
-.S7D-segment::after {
-    bottom: -33.3333333333%;
-    border-top-color: currentColor;
-}
-
-.S7D[data-code*="a"] .-seg-a,
-.S7D[data-code*="b"] .-seg-b,
-.S7D[data-code*="c"] .-seg-c,
-.S7D[data-code*="d"] .-seg-d,
-.S7D[data-code*="e"] .-seg-e,
-.S7D[data-code*="f"] .-seg-f,
-.S7D[data-code*="g"] .-seg-g {
-    color: #333;
-}
-
-.-seg-a {
-    top: -5%;
-    left: 41.6666666667%;
-}
-
-.-seg-b {
-    top: 15%;
-    right: 8.3333333333%;
-}
-
-.-seg-c {
-    bottom: 15%;
-    right: 8.3333333333%;
-}
-
-.-seg-d {
-    bottom: -5%;
-    left: 41.6666666667%;
-}
-
-.-seg-e {
-    bottom: 15%;
-    left: 8.3333333333%;
-}
-
-.-seg-f {
-    top: 15%;
-    left: 8.3333333333%;
-}
-
-.-seg-g {
-    top: 35%;
-    left: 41.6666666667%;
-}
-
-.-seg-a,
-.-seg-d,
-.-seg-g {
-    transform: rotate(90deg);
-}
-
-.S7D-word {
-    font-family: "Noto Sans CJK TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+.info {
+    font-family: MyFont;
+    font-size: 80px;
 }
