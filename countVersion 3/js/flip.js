@@ -10,7 +10,7 @@
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Square") {
 
-    // Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
+    // Format: Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
