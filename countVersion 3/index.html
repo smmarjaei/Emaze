@@ -106,7 +106,7 @@
 
 
     <!-- DIGITAL CLOCK (DIGITAL)  -->
-    <!-- <div id="Digital">
+    <div id="Digital">
         <div class="clock-styles">
             <link rel="stylesheet" type="text/css" href="css/digital.css">
             <table class="container" cellpadding="13px">
@@ -123,45 +123,51 @@
                     <td>Seconds</td>
                 </tr>
             </table>
- -->
-    <!-- <script type="text/javascript">
-                function countDown() {
-                    var today = new Date();
-                    var deadline = new Date("December 3, 2020 00:00:00");
+            <script type="text/javascript">
+                var ClockType = getParameterByName("clock-type");
+                if (ClockType == "Digital") {
 
-                    var CurrentTime = today.getTime();
-                    var deadlineTime = deadline.getTime();
+                    function countDown() {
+                        var today = new Date();
+                        var deadline = new Date("December 3, 2020 12:57");
 
-                    var remTime = deadlineTime - CurrentTime
+                        var CurrentTime = today.getTime();
+                        var deadlineTime = deadline.getTime();
 
-                    var sec = Math.floor(remTime / 1000);
-                    var min = Math.floor(sec / 60);
-                    var hrs = Math.floor(min / 60);
-                    var days = Math.floor(hrs / 24);
+                        var remTime = deadlineTime - CurrentTime
+                        console.log(remTime);
 
-                    hrs = hrs % 24;
-                    min = min % 60;
-                    sec = sec % 60;
 
-                    hrs = (hrs < 10) ? "0" + hrs : hrs;
-                    min = (min < 10) ? "0" + min : min;
-                    sec = (sec < 10) ? "0" + sec : sec;
+                        var sec = Math.floor(remTime / 1000);
+                        var min = Math.floor(sec / 60);
+                        var hrs = Math.floor(min / 60);
+                        var days = Math.floor(hrs / 24);
 
-                    document.getElementById('days').innerHTML = days;
-                    document.getElementById('hrs').innerHTML = hrs;
-                    document.getElementById('min').innerHTML = min;
-                    document.getElementById('sec').innerHTML = sec;
+                        hrs = hrs % 24;
+                        min = min % 60;
+                        sec = sec % 60;
 
-                    setTimeout(countDown, 1000);
+                        hrs = (hrs < 10) ? "0" + hrs : hrs;
+                        min = (min < 10) ? "0" + min : min;
+                        sec = (sec < 10) ? "0" + sec : sec;
+
+                        document.getElementById('days').innerHTML = days;
+                        document.getElementById('hrs').innerHTML = hrs;
+                        document.getElementById('min').innerHTML = min;
+                        document.getElementById('sec').innerHTML = sec;
+
+                        setTimeout(countDown, 1000);
+
+                    }
+
+                    countDown();
 
                 }
-
-                countDown();
-            </script> -->
-    <!-- <script type="text/javascript" src="js/digital.js"></script>
+            </script>
+            <!-- <script type="text/javascript" src="js/digital.js"></script> -->
         </div>
     </div>
- -->
+
 
 
 
