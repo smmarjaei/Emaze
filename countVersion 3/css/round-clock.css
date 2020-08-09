@@ -13,7 +13,7 @@ body {
     align-items: center;
     text-align: center;
     padding-top: 250px;
-    color: transparent;
+    color: normal;
     font-family: 'Helvetica Neue', 'Arial';
     font-weight: 100;
     letter-spacing: 1px;
@@ -61,7 +61,7 @@ ul {
 
 .chart span {
     display: block;
-    color: white;
+    color: normal;
     font-style: bold;
     font-size: 2rem;
     font-weight: normal;

@@ -70,14 +70,11 @@ var SlickCarousel = (function() {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-        'Font Style':font-underline,
-        'CountDownDate':date,
+        'Font Style': font - underline,
+        'CountDownDate': date,
 
     })
     var fontSize = getParameterByName("font-size");
     var textAlign = getParameterByName("text-align");
-
-
-
 
 })();

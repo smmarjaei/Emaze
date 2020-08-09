@@ -28,28 +28,28 @@
                         <p class="clock-hours clock-timer" id="day">
                         </p>
                         <p class="clock-label">
-                        <h3>Days</h3>
+                            <h3>Days</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-hours clock-timer" id="hour">
                         </p>
                         <p class="clock-label">
-                        <h3>Hours</h3>
+                            <h3>Hours</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-minutes clock-timer" id="minute">
                         </p>
                         <p class="clock-label">
-                        <h3>Minutes</h3>
+                            <h3>Minutes</h3>
                         </p>
                     </div>
                     <div class="clock-col">
                         <p class="clock-seconds clock-timer" id="second">
                         </p>
                         <p class="clock-label">
-                        <h3>Seconds</h3>
+                            <h3>Seconds</h3>
                         </p>
                     </div>
                     <script src="js/clock.js"></script>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <!-- FLIP WITHOUT ANIMATION (Sport) -->
+    <!-- FLIP WITHOUT ANIMATION (Sports) -->
     <div id="Sports">
         <div class="clock-styles">
             <link rel="stylesheet" href="css/flip-still.css">
@@ -70,124 +70,74 @@
 
 
 
-        <!-- FLIP WITH ANIMATION (Square) -->
-        <div id="Square">
-            <div class="clock-styles">
-                <link rel="stylesheet" href="css/flip.css">
-                <div class="flip">
-                    <script src="js/flip.js"></script>
-                </div>
+    <!-- FLIP WITH ANIMATION (Square) -->
+    <div id="Square">
+        <div class="clock-styles">
+            <link rel="stylesheet" href="css/flip.css">
+            <div class="flip">
+                <script src="js/flip.js"></script>
             </div>
         </div>
+    </div>
 
 
-
-        <!-- ROUND CLOCK (CLOCKS) -->
-        <div id="Clocks">
-            <div class="clock-styles">
-                <link rel='stylesheet'
-                    href='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.css'>
-                <link rel="stylesheet" href="css/round-clock.css">
-                <div class="circular-timer">
-                    <ul>
-                        <li id="chartDay" class="chart" data-percent="100"><span id="day"></span>Days</li>
-                        <li id="chartHour" class="chart" data-percent="100"><span id="hour"></span>Hours</li>
-                        <li id="chartMinute" class="chart" data-percent="100"><span id="minute"></span>Minutes</li>
-                        <li id="chartSecond" class="chart" data-percent="100"><span id="second"></span>Seconds</li>
-                    </ul>
-                </div>
-
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-                <script src='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.js'></script>
-                <script src="js/round-clock.js"></script>
+    <!-- ROUND CLOCK (CLOCKS) -->
+    <div id="Clocks">
+        <div class="clock-styles">
+            <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.css'>
+            <link rel="stylesheet" href="css/round-clock.css">
+            <div class="circular-timer">
+                <ul>
+                    <li id="chartDay" class="chart" data-percent="100"><span id="Day"></span>Days</li>
+                    <li id="chartHour" class="chart" data-percent="100"><span id="Hour"></span>Hours</li>
+                    <li id="chartMinute" class="chart" data-percent="100"><span id="Minute"></span>Minutes</li>
+                    <li id="chartSecond" class="chart" data-percent="100"><span id="Second"></span>Seconds</li>
+                </ul>
             </div>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src='https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.js'></script>
+            <script src="js/round-clock.js"></script>
         </div>
-        <br>
-        <br>
+    </div>
 
 
-        <!-- DIGITAL CLOCK (DIGITAL)  -->
-        <div id="Digital">
-            <div class="clock-styles">
-
-                <link rel="stylesheet" href="css/digital.css">
-                <script>
-                    function createS7DClock(variant) {
-                        let Clock = document.createElement("div");
-                        let S7DGroups = [
-                            createS7DNumGroup(2, variant),
-                            createS7DNumGroup(2, variant),
-                            createS7DNumGroup(2, variant),
-                        ];
-                        Clock.appendChild(S7DGroups[0]);
-                        Clock.appendChild(S7DGroups[1]);
-                        Clock.appendChild(S7DGroups[2]);
-                        return [Clock, S7DGroups];
-                    }
-
-                    function runS7DClock(S7DGroups) {
-                        let now = new Date();
-                        let H = "0" + now.getHours();
-                        let M = "0" + now.getMinutes();
-                        let S = "0" + now.getSeconds();
-                        lightS7DNumGroup(S7DGroups[0], H);
-                        lightS7DNumGroup(S7DGroups[1], M);
-                        lightS7DNumGroup(S7DGroups[2], S);
-                        setTimeout(() => runS7DClock(S7DGroups), 1000);
-                    }
-
-                    window.onload = function () {
-                        let Clock, Clock_S7DGroups;
-                        [Clock, Clock_S7DGroups] = createS7DClock();
-                        document.body.appendChild(Clock);
-                        runS7DClock(Clock_S7DGroups);
-
-                        document.body.appendChild(creatNumberSample());
-                        document.body.appendChild(creatNumberSampleExtend());
-                        document.body.appendChild(creatNumberSampleVariant());
-
-                        let alphabetCode = [
-                            "adefg", // E
-                            "eg", // r
-                            "eg", // r
-                            "cdeg", // o
-                            "eg", // r
-                        ];
-                        for (let a of alphabetCode) {
-                            document.body.appendChild(lightS7D(createS7D(), a));
-                        }
-                    };
-                </script>
-
-                <span class="S7D_word"> </span>
-
-                <script src="js/digital.js"></script>
-
-                <script src="https://momentjs.com/downloads/moment.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.js"></script>
-                <script src="js/digital.js"></script>
-            </div>
+    <!-- DIGITAL CLOCK (DIGITAL)  -->
+    <div id="Digital">
+        <div class="clock-styles">
+            <link rel="stylesheet" type="text/css" href="css/digital.css">
+            <table class="container" cellpadding="13px">
+                <tr class="info">
+                    <td id="days"></td>
+                    <td id="hrs"></td>
+                    <td id="min"></td>
+                    <td id="sec"></td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+            <script type="text/javascript" src="js/digital.js"></script>
         </div>
+    </div>
 
 
 
-
-
-        <!-- THIS SCRIPT BELOW IS WHAT CAUSES ISSUES WITH THE ROUND CLOCK, MAKE SURE IT IS COMMENTED OUT FOR ROUND CLOCK TO WORK -->
-
-        <!-- <script>
+    <!-- <script>
         window.jQuery ||
             document.write(
                 '<script src="js/vendor/jquery-1.12.0.min.js"><\/script>'
             );
-    </script>
-    <script src="../js/emaze.widgets-api.js"></script>
+    </script> -->
+    <!-- <script src="../js/emaze.widgets-api.js"></script>
     <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/carousel.js"></script> -->
-        <!-- <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <!-- <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="../js/emaze.widgets-api.js"></script> -->
-        <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

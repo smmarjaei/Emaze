@@ -1,16 +1,14 @@
-
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Extended") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if (CountDownDate!="nov 2, 2020 15:37:25"){
+    if (CountDownDate != "nov 2, 2020 15:37:25") {
         deadline = CountDownDate;
-    }
-    else {
+    } else {
         deadline = "nov 2, 2020 15:37:25";
     }
-    
+
     console.log(deadline);
     deadline = new Date(Date.parse(new Date(deadline)));
     console.log("Deadline", deadline.getTime());
@@ -30,11 +28,11 @@ if (ClockType == "Extended") {
         'color': fontColor,
     })
 
-    
-    
+
+
     // var deadline = new Date("nov 1, 2020 15:37:25").getTime(); 
 
-    var x = setInterval(function () {
+    var x = setInterval(function() {
 
         var now = new Date().getTime();
         console.log("now", now);

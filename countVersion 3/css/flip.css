@@ -21,6 +21,7 @@ body {
     -webkit-perspective: 400px;
     perspective: 400px;
     margin: 20px auto;
+    color: #ea4c4c;
 }
 
 .flip-clock *,
@@ -54,7 +55,6 @@ body {
     height: 0.72em;
     background: white;
     padding: 0.25em 0.25em;
-    color: #ea4c4c;
     border-radius: 0.15em 0.15em 0 0;
     backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
