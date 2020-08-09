@@ -1,27 +1,32 @@
-// function getParameterByName(name, defaultVal) {
-//     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-
-//     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-// };
-
 var ClockType = getParameterByName("clock-type");
-if (ClockType == "Clocks") {
+if (ClockType == "Digital") {
 
     //Updating Font Color
-    // var $font = $('.chart');
-    // var fontColor = getParameterByName("font-color");
-    // $font.css("color", fontColor)
-
+    var $font = $('.container');
+    var fontColor = getParameterByName("font-color");
+    $font.css("color", fontColor)
 
 
     function countDown() {
         var today = new Date();
-        var deadline = new Date("December 3, 2020 00:00:00");
+
+        var deadline;
+        var CountDownDate = getParameterByName("date");
+        if (CountDownDate != "nov 2, 2020 15:37:25") {
+            deadline = CountDownDate;
+        } else {
+            deadline = new Date();
+        }
+        deadline = new Date(Date.parse(new Date(deadline)));
+
+
 
         var CurrentTime = today.getTime();
         var deadlineTime = deadline.getTime();
 
         var remTime = deadlineTime - CurrentTime
+        console.log(remTime);
+
 
         var sec = Math.floor(remTime / 1000);
         var min = Math.floor(sec / 60);
@@ -46,4 +51,5 @@ if (ClockType == "Clocks") {
     }
 
     countDown();
+
 }
