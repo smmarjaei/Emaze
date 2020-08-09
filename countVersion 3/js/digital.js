@@ -23,12 +23,47 @@ if (ClockType == "Digital") {
         }
         deadline = new Date(Date.parse(new Date(deadline)));
 
-
+       
 
         var CurrentTime = today.getTime();
         var deadlineTime = deadline.getTime();
 
         var remTime = deadlineTime - CurrentTime
+        var days = getParameterByName("days");
+        var hours = getParameterByName("hours");
+        var minutes = getParameterByName("minutes");
+        var seconds = getParameterByName("seconds");
+        var units = getParameterByName("units");
+    
+        if(units=="false"){
+            console.log("In units");
+            $("#days").css("display", "none");
+            $("#d").css("display", "none");
+            $("#hrs").css("display", "none");
+            $("#h").css("display", "none");
+            $("#min").css("display", "none");
+            $("#m").css("display", "none");
+            $("#sec").css("display", "none");
+            $("#s").css("display", "none");
+        }
+        if(days=="false"){
+            $("#days").css("display", "none");
+            $("#d").css("display", "none");
+        }
+        if(hours=="false"){
+           $("#hrs").css("display", "none");
+           $("#h").css("display", "none");
+       } 
+        if(minutes=="false"){
+            $("#min").css("display", "none");
+            $("#m").css("display", "none");
+        }
+        if(seconds=="false"){
+            $("#sec").css("display", "none");
+            $("#s").css("display", "none");
+        }
+
+
         console.log(remTime);
 
 

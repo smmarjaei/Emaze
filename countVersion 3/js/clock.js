@@ -29,7 +29,32 @@ if (ClockType == "Extended") {
         'color': fontColor,
         // 'Style': font-underline
     })
+    
+    var days = getParameterByName("days");
+    var hours = getParameterByName("hours");
+    var minutes = getParameterByName("minutes");
+    var seconds = getParameterByName("seconds");
+    var units = getParameterByName("units");
 
+    if(units=="false"){
+        console.log("In units");
+        $("#d").css("display", "none");
+        $("#h").css("display", "none");
+        $("#m").css("display", "none");
+        $("#s").css("display", "none");
+    }
+    if(days=="false"){
+        $("#d").css("display", "none");
+    }
+    if(hours=="false"){
+       $("#h").css("display", "none");
+   } 
+    if(minutes=="false"){
+        $("#m").css("display", "none");
+    }
+    if(seconds=="false"){
+        $("#s").css("display", "none");
+    }
 
 
     // var deadline = new Date("nov 1, 2020 15:37:25").getTime(); 

@@ -23,22 +23,33 @@ if (ClockType == "Clocks") {
 
     // var bgColor = getParameterByName("bg-color");
 
+    var days = getParameterByName("days");
+    var hours = getParameterByName("hours");
+    var minutes = getParameterByName("minutes");
+    var seconds = getParameterByName("seconds");
+    var units = getParameterByName("units");
+        
+     if(units=="false"){
+        console.log("In units");
+        $("#chartDay").css("display", "none");
+        $("#chartHour").css("display", "none");
+        $("#chartMinute").css("display", "none");
+        $("#chartSecond").css("display", "none");
+     }
+    if(days=="false"){
+        $("#chartDay").css("display", "none");
+     }
+    if(hours=="false"){
+        $("#chartHour").css("display", "none");
+     } 
+    if(minutes=="false"){
+        $("#chartMinute").css("display", "none");
+    }
+    if(seconds=="false"){
+        $("#chartSecond").css("display", "none");
+    }
 
 
-
-    // var fontUnderline = getParameterByName("font-underline");
-    // $divClass = $('.clock-container');
-    // $divClass.css({
-    //     'background-color': bgColor,
-    //     'color': fontColor,
-    //     'Font Style':font-underline
-    // })
-
-    // $divClass = $('.clock-timer');
-    // $divClass.css({
-    //     'color': fontColor,
-    //     'Font Style':font-underline
-    // })
 
     $(function() {
         $('.chart').easyPieChart({

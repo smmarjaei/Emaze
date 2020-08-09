@@ -24,28 +24,28 @@
             <div class="clock-styles">
                 <link rel="stylesheet" href="css/clock.css">
                 <div class="clock-container">
-                    <div class="clock-col">
+                    <div class="clock-col" id="d">
                         <p class="clock-days clock-timer" id="day">
                         </p>
                         <p class="clock-label">
                             <h3>Days</h3>
                         </p>
                     </div>
-                    <div class="clock-col">
+                    <div class="clock-col" id="h">
                         <p class="clock-hours clock-timer" id="hour">
                         </p>
                         <p class="clock-label">
                             <h3>Hours</h3>
                         </p>
                     </div>
-                    <div class="clock-col">
+                    <div class="clock-col" id="m">
                         <p class="clock-minutes clock-timer" id="minute">
                         </p>
                         <p class="clock-label">
                             <h3>Minutes</h3>
                         </p>
                     </div>
-                    <div class="clock-col">
+                    <div class="clock-col" id="s">
                         <p class="clock-seconds clock-timer" id="second">
                         </p>
                         <p class="clock-label">
@@ -108,17 +108,18 @@
             <link rel="stylesheet" type="text/css" href="css/digital.css">
             <table class="container" cellpadding="13px">
                 <tr class="info">
-                    <td id="days"></td>
+                    <td id="days"> </td>
                     <td id="hrs"></td>
                     <td id="min"></td>
-                    <td id="sec"></td>
+                    <td id="sec">
+                    </td>
                 </tr>
                 <tr>
-                    <td>Days</td>
-                    <td>Hours</td>
-                    <td>Minutes</td>
-                    <td>Seconds</td>
-                </tr>
+                    <td id="d">Days</td>
+                    <td id="h">Hours</td>
+                    <td id="m">Minutes</td>
+                    <td id="s">Seconds</td>
+            </tr>
             </table>
             <script type="text/javascript" src="js/digital.js"></script>
         </div>

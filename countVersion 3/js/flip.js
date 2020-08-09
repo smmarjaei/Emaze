@@ -39,6 +39,32 @@ if (ClockType == "Square") {
     var fontWeight = getParameterByName("font-underline");
     $flip.css("font-weight", fontWeight)
 
+    var days = getParameterByName("days");
+    var hours = getParameterByName("hours");
+    var minutes = getParameterByName("minutes");
+    var seconds = getParameterByName("seconds");
+    var units = getParameterByName("units");
+
+    if(units=="false"){
+        console.log("In units");
+        $("#d").css("display", "none");
+        $("#h").css("display", "none");
+        $("#m").css("display", "none");
+        $("#s").css("display", "none");
+    }
+    if(days=="false"){
+        $("#d").css("display", "none");
+    }
+    if(hours=="false"){
+       $("#h").css("display", "none");
+   } 
+    if(minutes=="false"){
+        $("#m").css("display", "none");
+    }
+    if(seconds=="false"){
+        $("#s").css("display", "none");
+    }
+
     function CountdownTracker(label, value) {
 
         var el = document.createElement('span');
