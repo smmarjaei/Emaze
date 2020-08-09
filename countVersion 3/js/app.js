@@ -1,13 +1,5 @@
 var SlickCarousel = (function() {
 
-    // function getParameterByName(name, defaultVal) {
-    //     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-
-    //     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-    // };
-
-
-    // var $count = $('#styles');
     var ClockType = getParameterByName("clock-type");
 
     switch (ClockType) {
@@ -70,11 +62,8 @@ var SlickCarousel = (function() {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
-        'Font Style': font - underline,
+        'Style': font-underline,
         'CountDownDate': date,
 
     })
-    var fontSize = getParameterByName("font-size");
-    var textAlign = getParameterByName("text-align");
-
 })();

@@ -16,37 +16,37 @@
             "id": "date",
             "name": "CountdownDate",
             "type": "text",
-            "default": "February 2, 11:20"
+            "default": "November 2, 11:20"
         },
         {
             "id": "hours",
             "name": "Hours:",
             "type": "radio",
-            "default": "false"
+            "default": "true"
         },
         {
             "id": "days",
             "name": "Days:",
             "type": "radio",
-            "default": "false"
+            "default": "true"
         },
         {
             "id": "minutes",
             "name": "Minutes:",
             "type": "radio",
-            "default": "false"
+            "default": "true"
         },
         {
             "id": "seconds",
             "name": "Seconds:",
             "type": "radio",
-            "default": "false"
+            "default": "true"
         },
         {
-            "id": "text-align",
-            "name": "Text Alignment:",
-            "type": "text-align",
-            "default": "center"
+            "id": "units",
+            "name": "Units:",
+            "type": "radio",
+            "default": "true"
         },
         {
             "id": "bg-color",
@@ -62,7 +62,7 @@
         },
         {
             "id": "font-underline",
-            "name": "Font Style:",
+            "name": "Style:",
             "type": "text-underline",
             "default": false,
             "PossibleOptions": [

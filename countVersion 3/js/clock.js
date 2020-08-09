@@ -3,12 +3,12 @@ if (ClockType == "Extended") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if (CountDownDate != "nov 2, 2020 15:37:25") {
-        deadline = CountDownDate;
-    } else {
-        deadline = "nov 2, 2020 15:37:25";
+    if(CountDownDate==null){
+        deadline="nov 2, 2020 15:37:25"
     }
-
+    else if(CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = CountDownDate;
+    }
     console.log(deadline);
     deadline = new Date(Date.parse(new Date(deadline)));
     console.log("Deadline", deadline.getTime());
@@ -21,11 +21,13 @@ if (ClockType == "Extended") {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
+        // 'Style': font-underline
     })
 
     $divClass = $('.clock-timer');
     $divClass.css({
         'color': fontColor,
+        // 'Style': font-underline
     })
 
 

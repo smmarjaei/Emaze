@@ -14,10 +14,11 @@ if (ClockType == "Square") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if (CountDownDate != "nov 2, 2020 15:37:25") {
+    if(CountDownDate==null){
+        deadline="nov 2, 2020 15:37:25"
+    }
+    else if (CountDownDate != "nov 2, 2020 15:37:25") {
         deadline = CountDownDate;
-    } else {
-        deadline = "dec 2, 2020 15:37:25";
     }
     // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
     var c = new Clock(deadline, function() { alert('countdown complete') });

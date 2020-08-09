@@ -3,19 +3,23 @@ if (ClockType == "Digital") {
 
     //Updating Font Color
     var $font = $('.container');
+    var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
+    var fontUnderline = getParameterByName("font-underline");
     $font.css("color", fontColor)
-
+    $font.css("style",fontUnderline)
+    $font.css("Background-color",bgColor)
 
     function countDown() {
         var today = new Date();
 
         var deadline;
         var CountDownDate = getParameterByName("date");
-        if (CountDownDate != "nov 2, 2020 15:37:25") {
+        if(CountDownDate==null){
+            deadline="nov 2, 2020 15:37:25"
+        }
+        else if (CountDownDate != "nov 2, 2020 15:37:25") {
             deadline = CountDownDate;
-        } else {
-            deadline = new Date();
         }
         deadline = new Date(Date.parse(new Date(deadline)));
 

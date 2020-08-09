@@ -12,11 +12,11 @@ if (ClockType == "Sports") {
     var deadline;
     var CountDownDate = getParameterByName("date"); 
     console.log(CountDownDate);
-    if(CountDownDate!="nov 2, 2020 15:37:25"){
-        deadline=CountDownDate;
+    if(CountDownDate==null){
+        deadline="nov 2, 2020 15:37:25"
     }
-    else {
-    deadline = "nov 2, 2020 15:37:25";
+    else if (CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = CountDownDate;
     }
 
     //var deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED

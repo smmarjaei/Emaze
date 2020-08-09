@@ -1,21 +1,14 @@
-// function getParameterByName(name, defaultVal) {
-//     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-
-//     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-// };
-
 
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Clocks") {
-<<<<<<< HEAD
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if (CountDownDate != "nov 2, 2020 15:37:25") {
-        deadline = CountDownDate;
+    if(CountDownDate==null){
+        deadline="nov 2, 2020 15:37:25"
     }
-    else {
-        deadline = "nov 2, 2020 15:37:25";
+    else if (CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = CountDownDate;
     }
 
     var bgColor = getParameterByName("bg-color");
@@ -25,18 +18,9 @@ if (ClockType == "Clocks") {
     $divClass.css({
         'background-color': bgColor,
         'color': fontColor,
+        // 'Font Style': font-underline,
     })
 
-=======
-
-    //Updating Font Color
-    var $font = $('.chart');
-    var fontColor = getParameterByName("font-color");
-    $font.css("color", fontColor)
-
-    //Updating bg Color
-    // var $rimColor = $('.')
->>>>>>> 58a9ad02afc5e1c1ea8b590001f23f6092df62ae
     // var bgColor = getParameterByName("bg-color");
 
 
@@ -78,14 +62,6 @@ if (ClockType == "Clocks") {
             onStop: $.noop
 
         });
-
-        var deadline;
-        var CountDownDate = getParameterByName("date");
-        if (CountDownDate != "nov 2, 2020 15:37:25") {
-            deadline = CountDownDate;
-        } else {
-            deadline = "nov 2, 2020 15:37:25";
-        }
         deadline = new Date(Date.parse(new Date(deadline)));
         // var deadline = new Date("nov 1, 2020 15:37:25").getTime();
 
