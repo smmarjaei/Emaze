@@ -1,6 +1,6 @@
 @font-face {
-    font-family: sans-serif;
-    /* src: url(digital.ttf); */
+    font-family: MyFont;
+    src: url(digital.ttf);
 }
 
 body {
@@ -15,6 +15,7 @@ body {
     text-align: center;
     padding: 12px;
     background-color: normal;
+    color: normal;
     /* border: 2px solid black; */
     font-family: sans-serif;
     /* box-shadow: 0 0 5px 3px #999; */
