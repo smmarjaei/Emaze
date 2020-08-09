@@ -47,22 +47,22 @@ if (ClockType == "Square") {
 
     if(units=="false"){
         console.log("In units");
-        $("#d").css("display", "none");
-        $("#h").css("display", "none");
-        $("#m").css("display", "none");
-        $("#s").css("display", "none");
+        $("#Days").css("display", "none");
+        $("#Hours").css("display", "none");
+        $("#Minutes").css("display", "none");
+        $("#Seconds").css("display", "none");
     }
     if(days=="false"){
-        $("#d").css("display", "none");
+        $("#Days").css("display", "none");
     }
     if(hours=="false"){
-       $("#h").css("display", "none");
+       $("#Hours").css("display", "none");
    } 
     if(minutes=="false"){
-        $("#m").css("display", "none");
+        $("#Minutes").css("display", "none");
     }
     if(seconds=="false"){
-        $("#s").css("display", "none");
+        $("#Seconds").css("display", "none");
     }
 
     function CountdownTracker(label, value) {
