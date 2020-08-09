@@ -4,36 +4,46 @@
 //     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
 // };
 
+var ClockType = getParameterByName("clock-type");
+if (ClockType == "Clocks") {
 
-function countDown() {
-    var today = new Date();
-    var deadline = new Date("December 3, 2020 00:00:00");
+    //Updating Font Color
+    // var $font = $('.chart');
+    // var fontColor = getParameterByName("font-color");
+    // $font.css("color", fontColor)
 
-    var CurrentTime = today.getTime();
-    var deadlineTime = deadline.getTime();
 
-    var remTime = deadlineTime - CurrentTime
 
-    var sec = Math.floor(remTime / 1000);
-    var min = Math.floor(sec / 60);
-    var hrs = Math.floor(min / 60);
-    var days = Math.floor(hrs / 24);
+    function countDown() {
+        var today = new Date();
+        var deadline = new Date("December 3, 2020 00:00:00");
 
-    hrs = hrs % 24;
-    min = min % 60;
-    sec = sec % 60;
+        var CurrentTime = today.getTime();
+        var deadlineTime = deadline.getTime();
 
-    hrs = (hrs < 10) ? "0" + hrs : hrs;
-    min = (min < 10) ? "0" + min : min;
-    sec = (sec < 10) ? "0" + sec : sec;
+        var remTime = deadlineTime - CurrentTime
 
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hrs').innerHTML = hrs;
-    document.getElementById('min').innerHTML = min;
-    document.getElementById('sec').innerHTML = sec;
+        var sec = Math.floor(remTime / 1000);
+        var min = Math.floor(sec / 60);
+        var hrs = Math.floor(min / 60);
+        var days = Math.floor(hrs / 24);
 
-    setTimeout(countDown, 1000);
+        hrs = hrs % 24;
+        min = min % 60;
+        sec = sec % 60;
 
+        hrs = (hrs < 10) ? "0" + hrs : hrs;
+        min = (min < 10) ? "0" + min : min;
+        sec = (sec < 10) ? "0" + sec : sec;
+
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hrs').innerHTML = hrs;
+        document.getElementById('min').innerHTML = min;
+        document.getElementById('sec').innerHTML = sec;
+
+        setTimeout(countDown, 1000);
+
+    }
+
+    countDown();
 }
-
-countDown();
