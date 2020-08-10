@@ -38,29 +38,29 @@ if (ClockType == "Digital") {
         if(units=="false"){
             console.log("In units");
             $("#days").css("display", "none");
-            $("#d").css("display", "none");
+            $("#da").css("display", "none");
             $("#hrs").css("display", "none");
-            $("#h").css("display", "none");
+            $("#hr").css("display", "none");
             $("#min").css("display", "none");
-            $("#m").css("display", "none");
+            $("#mins").css("display", "none");
             $("#sec").css("display", "none");
-            $("#s").css("display", "none");
+            $("#secs").css("display", "none");
         }
         if(days=="false"){
             $("#days").css("display", "none");
-            $("#d").css("display", "none");
+            $("#dy").css("display", "none");
         }
         if(hours=="false"){
            $("#hrs").css("display", "none");
-           $("#h").css("display", "none");
+           $("#hr").css("display", "none");
        } 
         if(minutes=="false"){
             $("#min").css("display", "none");
-            $("#m").css("display", "none");
+            $("#mins").css("display", "none");
         }
         if(seconds=="false"){
             $("#sec").css("display", "none");
-            $("#s").css("display", "none");
+            $("#secs").css("display", "none");
         }
 
 
