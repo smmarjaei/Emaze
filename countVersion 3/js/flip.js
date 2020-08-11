@@ -14,10 +14,9 @@ if (ClockType == "Square") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if(CountDownDate==null){
-        deadline="nov 2, 2020 15:37:25"
-    }
-    else if (CountDownDate != "nov 2, 2020 15:37:25") {
+    if (CountDownDate == null) {
+        deadline = "nov 2, 2020 15:37:25"
+    } else if (CountDownDate != "nov 2, 2020 15:37:25") {
         deadline = CountDownDate;
     }
     // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
@@ -45,7 +44,7 @@ if (ClockType == "Square") {
     var seconds = getParameterByName("seconds");
     var units = getParameterByName("units");
 
-    if(units=="false"){
+    if (units == "false") {
         console.log("In units");
         $(".flip-clock__slot").css("display", "none");
         $("#Days").css("display", "none");
@@ -53,16 +52,16 @@ if (ClockType == "Square") {
         $("#Minutes").css("display", "none");
         $("#Seconds").css("display", "none");
     }
-    if(days=="false"){
+    if (days == "false") {
         $("#Days").css("display", "none");
     }
-    if(hours=="false"){
-       $("#Hours").css("display", "none");
-   } 
-    if(minutes=="false"){
+    if (hours == "false") {
+        $("#Hours").css("display", "none");
+    }
+    if (minutes == "false") {
         $("#Minutes").css("display", "none");
     }
-    if(seconds=="false"){
+    if (seconds == "false") {
         $("#Seconds").css("display", "none");
     }
 

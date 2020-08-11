@@ -32,11 +32,11 @@ body {
 
 .flip-clock__piece {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .flip-clock__slot {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .card {
