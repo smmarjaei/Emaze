@@ -52,13 +52,13 @@
             "id": "bg-color",
             "name": "Background Color:",
             "type": "color-picker",
-            "default": "transparent"
+            "default": "#fc8f10"
         },
         {
             "id": "font-color",
             "name": "Font Color:",
             "type": "color-picker",
-            "default": "#ea4c4c"
+            "default": "#000000"
         },
         {
             "id": "font-underline",
@@ -72,6 +72,6 @@
             ]
         }
     ],
-    "initialWidth": "200",
-    "initialHeight": "80"
+    "initialWidth": "2000",
+    "initialHeight" : "10000"
 }

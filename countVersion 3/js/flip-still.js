@@ -1,12 +1,5 @@
 // SET TIMER HERE 
 
-function getParameterByName(name, defaultVal) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-
-    return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-};
-
-
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Sports") {
     var deadline;
@@ -46,6 +39,7 @@ if (ClockType == "Sports") {
 
     if(units=="false"){
         console.log("In units");
+        $(".flip-clock__slot").css("display", "none");
         $("#Days").css("display", "none");
         $("#Hours").css("display", "none");
         $("#Minutes").css("display", "none");

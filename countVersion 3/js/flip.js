@@ -46,6 +46,7 @@ if (ClockType == "Square") {
 
     if (units == "false") {
         console.log("In units");
+        $(".flip-clock__slot").css("display", "none");
         $("#Days").css("display", "none");
         $("#Hours").css("display", "none");
         $("#Minutes").css("display", "none");
