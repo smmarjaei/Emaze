@@ -11,7 +11,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 12px;
@@ -22,12 +21,7 @@ body {
     /* box-shadow: 0 0 5px 3px #999; */
 }
 
-.units {
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
 .info {
     font-family: MyFont;
-    font-size: 150px;
+    font-size: 80px;
 }
