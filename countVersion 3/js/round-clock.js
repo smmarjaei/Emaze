@@ -1,13 +1,11 @@
-
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Clocks") {
     var deadline;
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
-    if(CountDownDate==null){
-        deadline="nov 2, 2020 15:37:25"
-    }
-    else if (CountDownDate != "nov 2, 2020 15:37:25") {
+    if (CountDownDate == null) {
+        deadline = "nov 2, 2020 15:37:25"
+    } else if (CountDownDate != "nov 2, 2020 15:37:25") {
         deadline = CountDownDate;
     }
 
@@ -28,24 +26,24 @@ if (ClockType == "Clocks") {
     var minutes = getParameterByName("minutes");
     var seconds = getParameterByName("seconds");
     var units = getParameterByName("units");
-        
-     if(units=="false"){
+
+    if (units == "false") {
         console.log("In units");
         $("#chartDay").css("display", "none");
         $("#chartHour").css("display", "none");
         $("#chartMinute").css("display", "none");
         $("#chartSecond").css("display", "none");
-     }
-    if(days=="false"){
+    }
+    if (days == "false") {
         $("#chartDay").css("display", "none");
-     }
-    if(hours=="false"){
+    }
+    if (hours == "false") {
         $("#chartHour").css("display", "none");
-     } 
-    if(minutes=="false"){
+    }
+    if (minutes == "false") {
         $("#chartMinute").css("display", "none");
     }
-    if(seconds=="false"){
+    if (seconds == "false") {
         $("#chartSecond").css("display", "none");
     }
 
@@ -64,7 +62,7 @@ if (ClockType == "Clocks") {
             // Width of the bar line in px.
             lineWidth: 8,
             // Size of the pie chart in px. It will always be a square.
-            size: 110,
+            size: 180,
             // Time in milliseconds for a eased animation of the bar growing, or false to deactivate.
             animate: 1000,
             // Callback function that is called at the start of any animation (only if animate is not false).
