@@ -1,0 +1,132 @@
+{
+    "parms": [{
+            // Card 1 
+            "id": "title_1",
+            "name": "Title_1",
+            "type": "text",
+            "default": "Mountain View"
+        },
+        {
+            "id": "info_1",
+            "name": "Info_1",
+            "type": "text",
+            "default": "Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains"
+        },
+        {
+            "id": "btn_1",
+            "name": "Btn_1",
+            "type": "text",
+            "default": "View Trips"
+        },
+        {
+            "id": "img_1",
+            "name": "Image_1",
+            "type": "text",
+            "default": "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        },
+        // Card 2
+        {
+            "id": "title_2",
+            "name": "Title_2",
+            "type": "text",
+            "default": "To The Beach"
+        },
+
+        {
+            "id": "info_2",
+            "name": "Info_2",
+            "type": "text",
+            "default": "Plan your next beach trip with these fabulous destinations"
+        },
+        {
+            "id": "btn_2",
+            "name": "Btn_2",
+            "type": "text",
+            "default": "View Trips"
+        },
+        {
+            "id": "img_2",
+            "name": "Image_2",
+            "type": "text",
+            "default": "https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        },
+        // Card 3
+        {
+            "id": "title_3",
+            "name": "Title_3",
+            "type": "text",
+            "default": "Desert Destinations"
+        },
+        {
+            "id": "info_3",
+            "name": "Info_3",
+            "type": "text",
+            "default": "It's the desert you've always dreamed of"
+        },
+        {
+            "id": "btn_3",
+            "name": "Btn_3",
+            "type": "text",
+            "default": "Book now"
+        },
+        {
+            "id": "img_3",
+            "name": "Image_3",
+            "type": "text",
+            "default": "https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        },
+        // Card 4
+        {
+            "id": "title_4",
+            "name": "Title_4",
+            "type": "text",
+            "default": "Explore The Galaxy"
+        },
+        {
+            "id": "info_4",
+            "name": "Info_4",
+            "type": "text",
+            "default": "Seriously, straight up, just blast off into outer space today"
+        },
+        {
+            "id": "btn_4",
+            "name": "Btn_4",
+            "type": "text",
+            "default": "Book now"
+        },
+
+        {
+            "id": "img_4",
+            "name": "Image_4",
+            "type": "text",
+            "default": "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        },
+
+
+        {
+            "id": "bg-color",
+            "name": "Background Color:",
+            "type": "color-picker",
+            "default": "#fc8f10"
+        },
+        {
+            "id": "text-color",
+            "name": "Text Color:",
+            "type": "color-picker",
+            "default": "#000000"
+        },
+        {
+            "id": "font-underline",
+            "name": "Style:",
+            "type": "text-underline",
+            "default": false,
+            "PossibleOptions": [
+                { "text": "Normal" },
+                { "text": "Bold" },
+                { "text": "Italics" }
+            ]
+        }
+    ],
+    "initialWidth": "2000",
+    "initialHeight": "10000"
+}
