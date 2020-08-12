@@ -10,18 +10,19 @@ body {
 .container {
     position: absolute;
     top: 50%;
+    background-color: normal;
     left: 50%;
+    background-color: normal;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 12px;
     background-color: normal;
     color: normal;
     /* border: 2px solid black; */
     font-family: sans-serif;
-    /* box-shadow: 0 0 5px 3px #999; */
+    font-size: 4vw;
 }
 
 .info {
     font-family: MyFont;
-    font-size: 80px;
+    font-size: 18vw;
 }
