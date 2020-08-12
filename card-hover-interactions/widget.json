@@ -2,107 +2,107 @@
     "parms": [{
             // Card 1 
             "id": "title_1",
-            "name": "Title_1",
+            "name": "Title 1",
             "type": "text",
             "default": "Mountain View"
         },
         {
-            "id": "info_1",
-            "name": "Info_1",
+            "id": "desc_1",
+            "name": "Description 1",
             "type": "text",
             "default": "Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains"
         },
         {
             "id": "btn_1",
-            "name": "Btn_1",
+            "name": "Btn 1",
             "type": "text",
             "default": "View Trips"
         },
         {
             "id": "img_1",
-            "name": "Image_1",
+            "name": "Image 1",
             "type": "text",
-            "default": "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+            "default": "https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
         },
         // Card 2
         {
             "id": "title_2",
-            "name": "Title_2",
+            "name": "Title 2",
             "type": "text",
             "default": "To The Beach"
         },
 
         {
-            "id": "info_2",
-            "name": "Info_2",
+            "id": "desc_2",
+            "name": "Description 2",
             "type": "text",
             "default": "Plan your next beach trip with these fabulous destinations"
         },
         {
             "id": "btn_2",
-            "name": "Btn_2",
+            "name": "Button 2",
             "type": "text",
             "default": "View Trips"
         },
         {
             "id": "img_2",
-            "name": "Image_2",
+            "name": "Image 2",
             "type": "text",
             "default": "https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
         },
         // Card 3
         {
             "id": "title_3",
-            "name": "Title_3",
+            "name": "Title 3",
             "type": "text",
             "default": "Desert Destinations"
         },
         {
-            "id": "info_3",
-            "name": "Info_3",
+            "id": "desc_3",
+            "name": "Description 3",
             "type": "text",
             "default": "It's the desert you've always dreamed of"
         },
         {
             "id": "btn_3",
-            "name": "Btn_3",
+            "name": "Button 3",
             "type": "text",
             "default": "Book now"
         },
         {
             "id": "img_3",
-            "name": "Image_3",
+            "name": "Image 3",
             "type": "text",
             "default": "https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
         },
         // Card 4
         {
             "id": "title_4",
-            "name": "Title_4",
+            "name": "Title 4",
             "type": "text",
             "default": "Explore The Galaxy"
         },
         {
-            "id": "info_4",
-            "name": "Info_4",
+            "id": "desc_4",
+            "name": "Description 4",
             "type": "text",
             "default": "Seriously, straight up, just blast off into outer space today"
         },
         {
             "id": "btn_4",
-            "name": "Btn_4",
+            "name": "Button 4",
             "type": "text",
             "default": "Book now"
         },
 
         {
             "id": "img_4",
-            "name": "Image_4",
+            "name": "Image 4",
             "type": "text",
             "default": "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
         },
 
-
+        // Settings
         {
             "id": "bg-color",
             "name": "Background Color:",
