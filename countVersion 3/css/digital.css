@@ -15,7 +15,9 @@ body {
     background-color: normal;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: normal;
+    padding: 7vh;
+    background-color: white;
+    border-radius: 10px;
     color: normal;
     /* border: 2px solid black; */
     font-family: sans-serif;
@@ -27,4 +29,6 @@ body {
 .info {
     font-family: MyFont;
     font-size: 18vw;
+    /* margin-top: 500px; */
+    min-width: 40px;
 }
