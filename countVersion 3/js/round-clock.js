@@ -60,9 +60,9 @@ if (ClockType == "Clocks") {
             // Defines how the ending of the bar line looks like. Possible values are: butt, round and square.
             lineCap: 'round',
             // Width of the bar line in px.
-            lineWidth: 8,
+            lineWidth: 12,
             // Size of the pie chart in px. It will always be a square.
-            size: 180,
+            size: 200,
             // Time in milliseconds for a eased animation of the bar growing, or false to deactivate.
             animate: 1000,
             // Callback function that is called at the start of any animation (only if animate is not false).
