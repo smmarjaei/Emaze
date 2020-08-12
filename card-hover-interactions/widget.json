@@ -104,12 +104,6 @@
 
         // Settings
         {
-            "id": "bg-color",
-            "name": "Background Color:",
-            "type": "color-picker",
-            "default": "#fc8f10"
-        },
-        {
             "id": "text-color",
             "name": "Text Color:",
             "type": "color-picker",
