@@ -21,7 +21,7 @@ body {
     -webkit-perspective: 400px;
     perspective: 400px;
     margin: 20px auto;
-    color: #ea4c4c;
+    color: #e6e6e6;
 }
 
 .flip-clock *,
@@ -36,7 +36,8 @@ body {
 }
 
 .flip-clock__slot {
-    font-size: 3vw;
+    font-size: 2.8vw;
+    color: rgb(41, 41, 41);
 }
 
 .card {
@@ -52,8 +53,8 @@ body {
 .card__back::before,
 .card__back::after {
     display: block;
+    background-color: rgb(41, 41, 41);
     height: 0.72em;
-    background: white;
     padding: 0.25em 0.25em;
     border-radius: 0.15em 0.15em 0 0;
     backface-visibility: hidden;
@@ -69,10 +70,10 @@ body {
     top: 50%;
     left: 0;
     border-top: solid 1px rgb(205, 205, 205);
-    background: white;
     border-radius: 0 0 0.15em 0.15em;
     pointer-events: none;
     overflow: hidden;
+    color: #e6e6e6;
 }
 
 .card__bottom::after {
