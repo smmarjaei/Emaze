@@ -58,9 +58,9 @@ if (ClockType == "Clocks") {
             // The color of the scale lines, false to disable rendering.
             scaleColor: '#dfe0e0',
             // Defines how the ending of the bar line looks like. Possible values are: butt, round and square.
-            lineCap: 'round',
+            lineCap: 'square',
             // Width of the bar line in px.
-            lineWidth: 18,
+            lineWidth: 16,
             // Size of the pie chart in px. It will always be a square.
             size: 200,
             // Time in milliseconds for a eased animation of the bar growing, or false to deactivate.
@@ -105,10 +105,10 @@ if (ClockType == "Clocks") {
             if (t < 0) {
                 clearInterval(x);
                 document.getElementById("timeRemaining").innerHTML = "TIME UP";
-                document.getElementById("day").innerHTML = '0';
-                document.getElementById("hour").innerHTML = '0';
-                document.getElementById("minute").innerHTML = '0';
-                document.getElementById("second").innerHTML = '0';
+                document.getElementById("Day").innerHTML = '0';
+                document.getElementById("Hour").innerHTML = '0';
+                document.getElementById("Minute").innerHTML = '0';
+                document.getElementById("sSecond").innerHTML = '0';
             }
 
         }, 1000);
