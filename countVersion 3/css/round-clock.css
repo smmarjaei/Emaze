@@ -24,6 +24,10 @@ ul {
     margin-bottom: 3.5rem;
 }
 
+li {
+    font-size: 1.5rem;
+}
+
 #wrap {
     width: 100%;
     margin: 0;
@@ -41,7 +45,7 @@ ul {
     display: inline-block;
     width: 95px;
     height: 95px;
-    margin: 0px 15px;
+    margin: 0px 20px;
     padding-bottom: 5rem;
     font-family: 'Nunito Light';
     color: black;
@@ -56,7 +60,7 @@ ul {
     display: block;
     color: normal;
     font-style: bold;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: normal;
     font-family: 'Nunito Light';
 }
