@@ -65,10 +65,11 @@ li {
     font-family: 'Nunito Light';
 }
 
-#day,
+
+/* #day,
 #minute,
 #hour,
 #second {
     color: rgb(58, 58, 58);
     font-family: 'Arial';
-}
+} */
