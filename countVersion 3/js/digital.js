@@ -50,7 +50,7 @@ if (ClockType == "Digital") {
             }
             if (days == "false") {
                 $("#days").css("display", "none");
-                $("#dy").css("display", "none");
+                $("#da").css("display", "none");
             }
             if (hours == "false") {
                 $("#hrs").css("display", "none");
