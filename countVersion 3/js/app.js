@@ -53,17 +53,4 @@ var SlickCarousel = (function() {
             $("#Digital").css("display", "none");
     }
 
-
-    var bgColor = getParameterByName("bg-color");
-    var fontColor = getParameterByName("font-color");
-    var fontUnderline = getParameterByName("font-underline");
-    var CountDownDate = getParameterByName("date");
-    $divClass = $('.clock-styles');
-    $divClass.css({
-        'background-color': bgColor,
-        'color': fontColor,
-        'Style': font-underline,
-        'CountDownDate': date,
-
-    })
 })();
