@@ -1,12 +1,3 @@
-// SET TIMER HERE 
-
-// function getParameterByName(name, defaultVal) {
-//     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-
-//     return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
-// };
-
-
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Square") {
 
@@ -23,17 +14,29 @@ if (ClockType == "Square") {
     var c = new Clock(deadline, function() { alert('countdown complete') });
     document.body.appendChild(c.el);
 
-    // console.log("TESTING");
+    //font-color
     var $cardTop = $('.card__top');
     var $cardBottom = $('.card__bottom');
     var $cardBack = $('.card__back');
-    var $flip = $('.flip');
+    var $flip = $('.flip-clock');
 
     var fontColor = getParameterByName("font-color");
     $cardTop.css("color", fontColor);
     $cardBottom.css("color", fontColor);
     $cardBack.css("color", fontColor);
     $flip.css("color", fontColor);
+
+    //bg-color
+    var $cardBackBefore = $('.card__back::before');
+    var $cardBackAfter = $('.card__back::after');
+    var bgColor = getParameterByName("bg-color");
+    $cardTop.css("background", bgColor);
+    $cardBottom.css("background", bgColor);
+    // $cardBackBefore.css("background", bgColor);
+    // $cardBackAfter.css("background", bgColor);
+    // $cardBack.css("background", bgColor);
+
+
 
     var fontWeight = getParameterByName("font-underline");
     $flip.css("font-weight", fontWeight)
@@ -47,10 +50,10 @@ if (ClockType == "Square") {
     if (units == "false") {
         console.log("In units");
         $(".flip-clock__slot").css("display", "none");
-        $("#Days").css("display", "none");
-        $("#Hours").css("display", "none");
-        $("#Minutes").css("display", "none");
-        $("#Seconds").css("display", "none");
+        // $("#Days").css("display", "none");
+        // $("#Hours").css("display", "none");
+        // $("#Minutes").css("display", "none");
+        // $("#Seconds").css("display", "none");
     }
     if (days == "false") {
         $("#Days").css("display", "none");
