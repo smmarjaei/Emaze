@@ -13,37 +13,37 @@
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <!--
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        function getParameterByName(name, defaultVal) {
+            var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 
-Follow me on
-Dribbble: https://dribbble.com/supahfunk
-Twitter: https://twitter.com/supahfunk
-Codepen: https://codepen.io/supah/
+            return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+        };
+    </script>
 
--->
     <div class="split-slideshow">
         <div class="slideshow">
             <div class="slider">
-                <div class="item">
+                <div id="img_1" class="item">
                     <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-2.jpg" />
                 </div>
-                <div class="item">
+                <div id="img_2" class="item">
                     <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" />
                 </div>
-                <div class="item">
+                <div id="img_3" class="item">
                     <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg" />
                 </div>
-                <div class="item">
+                <div id="img_4" class="item">
                     <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" />
                 </div>
             </div>
         </div>
         <div class="slideshow-text">
-            <div class="item">Canyon</div>
-            <div class="item">Desert</div>
-            <div class="item">Erosion</div>
-            <div class="item">Shape</div>
+            <div id="slide_1" class="item">Canyon</div>
+            <div id="slide_2" class="item">Desert</div>
+            <div id="slide_3" class="item">Erosion</div>
+            <div id="slide_4" class="item">Shape</div>
         </div>
     </div>
 
