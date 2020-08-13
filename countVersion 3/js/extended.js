@@ -6,9 +6,12 @@ if (ClockType == "Extended") {
     var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
     var fontUnderline = getParameterByName("font-underline");
+
+    console.log('bgColor', bgColor);
     $divClass = $('.clock-container');
+    // %23fff000 = #fff000
     $divClass.css({
-        'background-color': bgColor,
+        'background-color': bgColor+'',
         // 'Style': font-underline
     })
     $font.css("color", fontColor)
