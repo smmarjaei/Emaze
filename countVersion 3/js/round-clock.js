@@ -58,7 +58,7 @@ if (ClockType == "Clocks") {
             // The color of the scale lines, false to disable rendering.
             scaleColor: '#dfe0e0',
             // Defines how the ending of the bar line looks like. Possible values are: butt, round and square.
-            lineCap: 'square',
+            lineCap: 'round',
             // Width of the bar line in px.
             lineWidth: 16,
             // Size of the pie chart in px. It will always be a square.

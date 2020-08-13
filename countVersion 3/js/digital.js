@@ -3,7 +3,7 @@ if (ClockType == "Digital") {
 
     //Updating Font Color
     var $font = $('.container');
-    var $bgColor = $('body')
+    var $bgColor = $('.container')
 
     var bgColor = getParameterByName("bg-color");
     var fontColor = getParameterByName("font-color");
@@ -23,6 +23,7 @@ if (ClockType == "Digital") {
             document.getElementById('hrs').innerHTML = '00';
             document.getElementById('min').innerHTML = '00';
             document.getElementById('sec').innerHTML = '00';
+
 
         } else if (CountDownDate != "nov 2, 2020 15:37:25") {
             deadline = CountDownDate;
