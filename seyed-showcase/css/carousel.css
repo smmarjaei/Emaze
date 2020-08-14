@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'nextexitfot-light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('nextexitfot-light'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoExt';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//resources.emaze.com/emaze-fonts/fonts/RobotoExt.eot);
+    src: url(//fonts.gstatic.com/s/roboto/v14/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/RobotoExt.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/RobotoExt.ttf) format('truetype');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'NotoSansDevanagari';
+    src: local('NotoSans'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoNaskhArabic';
+    src: local('NotoNaskhArabic'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.eot);
+    src: url(//fonts.gstatic.com/s/roboto/v14/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.ttf) format('truetype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Roboto-cyrillic-ext';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.ttf) format('truetype');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+    font-family: 'nextexitfot';
+    font-style: normal;
+    font-weight: 400;
+    src: local('nextexitfot'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nextexitfot';
+    font-style: normal;
+    font-weight: 400;
+    src: local('nextexitfot'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dosis-Ext';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dosis Regular'), local('Dosis-Regular'), url(//resources.emaze.com/emaze-fonts/fonts/Dosis-Ext.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/Dosis-Ext.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Dosis-Ext.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Dosis-Ext.ttf) format('truetype');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'NotoSansDevanagari';
+    src: local('NotoSans'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/NotoSans.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoNaskhArabic';
+    src: local('NotoNaskhArabic'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/NotoNaskhArabic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.eot);
+    src: url(//fonts.gstatic.com/s/roboto/v14/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-Cyrillic.ttf) format('truetype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Roboto-cyrillic-ext';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Roboto-cyrillic-ext.ttf) format('truetype');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+    font-family: 'nextexitfot-light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('nextexitfot-light'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.eot);
+    src: url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/nextexitfot-light.ttf) format('truetype');
+}
+
+.slider {
+    /*max-width: 100%;
+    height: auto;
+    margin: 4%;*/
+    /*max-width: 96%;
+    margin: auto;
+    height: 70%;*/
+}
+
+/*The buttons of prev and next*/
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-next {
+    right: -27px;
+    width: 20px;
+    height: 34px;
+}
+
+.slick-prev {
+    width: 20px;
+    height: 34px;
+}
+/*we overwrite the default*/
+.slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+    .slick-slide img, video {
+        max-width: 80vw;
+        height: 95vh;
+    }
+
+
+.video-play:focus {
+    outline: none;
+}
+
+.video-play {
+    border: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    background-image: url('../images/play-icon.png');
+    cursor: pointer;
+    width: 58px;
+    height: 58px;
+    margin-top: -29px;
+    margin-left: -29px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+    .video-play:hover {
+        background-image: url('../images/play-icon-hover.png');
+    }
+
+html {
+    max-width: 95%;
+    margin: auto;
+    height: auto;
+}
+
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0.8%;
+    overflow: hidden;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .slick-slide img {
+    }
+
+    html {
+        max-width: 80%;
+        margin: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        max-width: 80%;
+        margin: auto;
+        height: auto;
+    }
+}
+/*if the height is too small we get scroll, this correct it*/
+
+/*@media only screen and (max-height: 380px) {
+    .slick-slide img{
+        height: 80vh;
+    }
+}
+@media only screen and (max-height: 586px) {
+    .slick-slide img{
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-height: 295px) {
+    .slick-slide img{
+        height: 70vh;
+    }
+}*/
+
+
+
+
+.a-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.span-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.title {
+    display: none;
+    color: white;
+    font-family: nextexitfot;
+    /*font-size: calc(70px + .5vw);*/
+    font-size: calc(1.5em + 1vmin);
+    margin-top: 1.5%;
+}
+
+
+.description {
+    display: none;
+    color: white;
+    margin-top: 0.1px;
+    font-family: nextexitfot-light;
+    /*font-size: calc(40px + .5vw);*/
+    font-size: calc(1em + 1vmin);
+    margin-top: 1%;
+}
+
+
+.texts {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    max-width: 95%;
+    background: rgba(0,0,0,0.5);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.slick-slide:hover .title {
+    display: block;
+}
+
+.slick-slide:hover .description {
+    display: block;
+}
+/*iphone fix. it was not visible in iphone*/
+.slick-slide-ios-fix {
+    width: 1px; /*iphone fix*/
+    min-width: 100%; /*iphone fix*/
+    max-width: 100%;
+    height: auto;
+    margin: 0.8%;
+    overflow: hidden;
+}
+
+
+.video-wrapper {
+position:relative;
+display:inline-block;
+}

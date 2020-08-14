@@ -1,6 +1,18 @@
 var ClockType = getParameterByName("clock-type");
 if (ClockType == "Square") {
 
+    // Format: Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
+    var deadline;
+    var CountDownDate = getParameterByName("date");
+    console.log(CountDownDate);
+    if (CountDownDate == null) {
+        deadline = "0"
+    } else if (CountDownDate != "0") {
+        deadline = CountDownDate;
+    }
+    // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
+    var c = new Clock(deadline);
+    document.body.appendChild(c.el);
 
     //font-color
     var $cardTop = $('.card__top');
@@ -15,14 +27,15 @@ if (ClockType == "Square") {
     $flip.css("color", fontColor);
 
     //bg-color
-    var $cardBackBefore = $('.card__back::before');
-    var $cardBackAfter = $('.card__back::after');
+    var $cardBackBefore = $('.card__back');
     var bgColor = getParameterByName("bg-color");
     $cardTop.css("background", bgColor);
     $cardBottom.css("background", bgColor);
     // $cardBackBefore.css("background", bgColor);
+    // $cardBackBefore.css("background", bgColor);
     // $cardBackAfter.css("background", bgColor);
     // $cardBack.css("background", bgColor);
+
 
 
     var fontWeight = getParameterByName("font-underline");
@@ -33,6 +46,7 @@ if (ClockType == "Square") {
     var minutes = getParameterByName("minutes");
     var seconds = getParameterByName("seconds");
     var units = getParameterByName("units");
+
 
     if (units == "false") {
         console.log("In units");
@@ -54,22 +68,6 @@ if (ClockType == "Square") {
     if (seconds == "false") {
         $("#Seconds").css("display", "none");
     }
-
-    // Format: Sun Sep 02 2020 20:28:00 GMT+0300 (Israel Daylight Time)
-    var deadline;
-    var CountDownDate = getParameterByName("date");
-    // console.log('format', CountDownDate);
-    if (CountDownDate == null) {
-        deadline = "aug 11, 2020 23:37:25"
-
-    } else if (CountDownDate != "nov 2, 2020 15:37:25") {
-        deadline = CountDownDate;
-    }
-
-    // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
-    var c = new Clock(deadline, function() { alert('countdown complete') });
-    document.body.appendChild(c.el);
-
 
     function CountdownTracker(label, value) {
 
@@ -120,15 +118,15 @@ if (ClockType == "Square") {
         };
     }
 
-    // functiofn getTime() {
-    //     var t = new Date();
-    //     return {
-    //         'Total': t,
-    //         'Hours': t.getHours() % 12,
-    //         'Minutes': t.getMinutes(),
-    //         'Seconds': t.getSeconds()
-    //     };
-    // }
+    function getTime() {
+        var t = new Date();
+        return {
+            'Total': t,
+            'Hours': t.getHours() % 12,
+            'Minutes': t.getMinutes(),
+            'Seconds': t.getSeconds()
+        };
+    }
 
     function Clock(countdown, callback) {
 

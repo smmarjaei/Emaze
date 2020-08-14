@@ -1,0 +1,177 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+    <!--<link rel="stylesheet" type="text/css" href="./slick/slick.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">-->
+    <!--<link rel="stylesheet" href="css/carousel.css">-->
+
+    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+    <script type="text/javascript">
+        var globalObj = (function() {
+            var master = {};
+            var globalImageArr;
+
+            function getParameterByName(name, defaultVal) {
+                var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+
+                return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+
+            }
+
+            function loadjscssfile(filename, filetype) {
+                if (filetype == "js") { //if filename is a external JavaScript file
+                    var fileref = document.createElement('script');
+                    fileref.setAttribute("type", "text/javascript");
+                    fileref.setAttribute("src", filename);
+                } else if (filetype == "css") { //if filename is an external CSS file
+                    var fileref = document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", filename);
+                }
+                if (typeof fileref != "undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
+
+            function loadScript(url, callback) {
+                // Adding the script tag to the head as suggested before
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = false; // download async run each file sync in the order it was called.
+
+
+                // Then bind the event to the callback function.
+                // There are several events for cross browser compatibility.
+                if (callback) {
+                    script.onreadystatechange = callback;
+                    script.onload = callback;
+                }
+
+                script.src = url; // for some browsers this line need to be called after the events listeneres.
+                // Fire the loading
+                head.appendChild(script);
+            }
+
+            function initSlick() {
+                if (typeof SlickCarousel != "undefined") {
+                    SlickCarousel.init();
+                }
+            }
+
+            function jqueryLoaded() {
+                loadScript("../js/emaze.widgets-api.js");
+                loadScript("./slick/slick.min.js");
+                loadScript("js/carousel.js", initSlick);
+            }
+
+
+            try {
+                globalImageArr = JSON.parse(getParameterByName("imageArray"));
+                master.globalImageArr = globalImageArr;
+
+                var str = window.location.search;
+                str = str.replace(/&imageArray.*?&/, '&').replace(/&imageArray.*/, ''); // removes the image array from the url and leaves the rest as is.
+
+                window.history.replaceState(null, null, window.location.pathname + str); // this removes all the url params from the url. if the query string is too long then we get 400 bad request.
+
+
+                //loadScript("https://code.jquery.com/jquery-1.12.0.min.js", jqueryLoaded);
+                //loadScript("https://code.jquery.com/jquery-1.12.0.min.js");
+
+                loadjscssfile("./slick/slick.css", "css");
+                loadjscssfile("./slick/slick-theme.css", "css");
+                loadjscssfile("css/carousel.css", "css");
+
+                //loadScript("js/vendor/modernizr-2.8.3.min.js");
+                //loadScript("js/vendor/jquery-1.12.0.min.js");
+                loadScript("../../vbcommon/libs/jquery-2.1.1.min.js");
+                loadScript("../js/emaze.widgets-api.js");
+                loadScript("./slick/slick.min.js");
+                loadScript("js/carousel.js", initSlick);
+            } catch (e) {
+                console.log(e);
+            }
+
+            return master;
+
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div class=" variable slider">
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        function getParameterByName(name, defaultVal) {
+            var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+
+            return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : defaultVal;
+        };
+    </script>
+
+    <!-- partial:index.partial.html -->
+    <main class="page-content">
+        <div id="card_1" class="card">
+            <div class="content">
+                <h2 id="heading_1" class="title">Mountain View</h2>
+                <p id="body_1" class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button id="button_1" class="btn">View Trips</button>
+            </div>
+        </div>
+        <div id="card_2" class="card">
+            <div class="content">
+                <h2 id="heading_2" class="title">To The Beach</h2>
+                <p id="body_2" class="copy">Plan your next beach trip with these fabulous destinations</p>
+                <button id="button_2" class="btn">View Trips</button>
+            </div>
+        </div>
+        <div id="card_3" class="card">
+            <div class="content">
+                <h2 id="heading_3" class="title">Desert Destinations</h2>
+                <p id="body_3" class="copy">It's the desert you've always dreamed of</p>
+                <button id="button_3" class="btn">Book Now</button>
+            </div>
+        </div>
+        <div id="card_4" class="card">
+            <div class="content">
+                <h2 id="heading_4" class="title">Explore The Galaxy</h2>
+                <p id="body_4" class="copy">Seriously, straight up, just blast off into outer space today</p>
+                <button id="button_4" class="btn">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+
+
+    <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/emaze.widgets-api.js"></script>
+        <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/carousel.js"></script>-->
+
+
+</body>
+
+</html>

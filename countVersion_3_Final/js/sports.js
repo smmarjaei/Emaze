@@ -6,12 +6,12 @@ if (ClockType == "Sports") {
     var CountDownDate = getParameterByName("date");
     console.log(CountDownDate);
     if (CountDownDate == null) {
-        deadline = "nov 2, 2020 15:37:25"
-    } else if (CountDownDate != "nov 2, 2020 15:37:25") {
+        deadline = "0"
+    } else if (CountDownDate != "0") {
         deadline = CountDownDate;
     }
     // deadline = new Date(Date.parse(new Date("nov 2, 2020 15:37:25"))); //SUPPORT FOR THREE DIGIT DAYS NEEDED
-    var c = new Clock(deadline, function() { alert('countdown complete') });
+    var c = new Clock(deadline);
     document.body.appendChild(c.el);
 
     //font-color
@@ -27,11 +27,11 @@ if (ClockType == "Sports") {
     $flip.css("color", fontColor);
 
     //bg-color
-    var $cardBackBefore = $('.card__back::before');
-    var $cardBackAfter = $('.card__back::after');
+    var $cardBackBefore = $('.card__back');
     var bgColor = getParameterByName("bg-color");
     $cardTop.css("background", bgColor);
     $cardBottom.css("background", bgColor);
+    // $cardBackBefore.css("background", bgColor);
     // $cardBackBefore.css("background", bgColor);
     // $cardBackAfter.css("background", bgColor);
     // $cardBack.css("background", bgColor);
@@ -46,6 +46,7 @@ if (ClockType == "Sports") {
     var minutes = getParameterByName("minutes");
     var seconds = getParameterByName("seconds");
     var units = getParameterByName("units");
+
 
     if (units == "false") {
         console.log("In units");
